@@ -1,0 +1,16 @@
+
+.photo img{
+    width: 367px;
+}
+.photo .image{
+    float: left;
+    padding: 16px;
+    display: flex;
+}
+.box{
+    width: 750px;
+    height: 100%;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
