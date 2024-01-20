@@ -1,7 +1,6 @@
 .photo {
     display: flex;
     flex-wrap: wrap;
-   
     max-width: 750px;
     gap: 16px;
     justify-content: center;
@@ -11,9 +10,25 @@
     height: 200px;
     
 }
+.container {
+    position: relative;
+    font-family: Arial;
+
+  }
+  
+  .text-block {
+    height: 50px;
+    position: absolute;
+    bottom: 12px;
+    right: 8px;
+    background-color: rgb(0 0 0 / 60%);
+    color: white;
+    padding-left: 6px;
+    padding-right: 246px;
+  }
+  
 .box{
    position: relative;
-   left: 270px;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -26,3 +41,76 @@
     height: 200px;
 }
 
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+  }
+  
+ 
+  .toggle-switch .toggle-input {
+    display: none;
+  }
+
+  .toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #bebebe;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .toggle-switch .toggle-input:checked + .toggle-label {
+    background-color: #2196F3;
+  }
+  
+  .toggle-switch .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+  }
+  
+.button{
+    background-color: #6b4bd4;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1{
+    background-color: #6b4bd4;
+    border: none;
+    color: white;
+    padding: 6px 284px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
