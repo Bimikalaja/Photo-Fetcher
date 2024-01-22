@@ -12,23 +12,22 @@
     <h1>Photo Fetcher</h1>
   </div>
   
-  <!--toggle switch-->
   <div class="box">
     <div class="toggle-switch">
       <input class="toggle-input" id="toggleSwitch" type="checkbox">
       <label class="toggle-label" for="toggleSwitch"></label>
    </div>
-   <p>Make photos grayscale <span style="color: white;">..........................................................................</span></p> 
+    <p>Make photos grayscale <span style="color: white;">..........................................................................</span></p> 
 
-   <a href="#" class="button" id="loadMoreBtn">Fetch Initial Photos</a>
+    <a href="#" class="button" id="loadMoreBtn">Fetch Initial Photos</a>
 
-   <!-- Photo --> 
-   <div class="box" id="photoContainer" class="photo">
-     <!-- Images will be dynamically added here -->
-   </div>
+   
+    <div class="box" class="photocontainer" id="photoContainer" class="photo">
+  
+    </div>
 
    <div class="box">
-    <a href="#" class="button1" onclick="fetchMorePhotos()">More Photos</a>
+    <a href="#" class="button1" id="fetchMoreBtn">More Photos</a>
    </div>
    
 </body>
