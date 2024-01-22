@@ -1,8 +1,11 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
 .photo {
     display: flex;
     flex-wrap: wrap;
     max-width: 750px;
-    gap: 16px;
+    gap: 8px;
     justify-content: center;
 }
 
@@ -11,6 +14,7 @@
     height: 200px;
     margin: 8px;    
 }
+
 .container {
     position: relative;
     font-family: Arial;
@@ -34,18 +38,20 @@
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   width: 100%;
+   width: 750px;
+   left: 370px;
 }
-.box h1{
+.box1{
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
   width: 620px;
+  left: 435px;
 }
 .box img {
-    margin: 16px;
+    margin: 8px;
     width: 300px;
     height: 200px;
 }
@@ -89,7 +95,7 @@
   }
   
   .toggle-switch .toggle-input:checked + .toggle-label {
-    background-color: #2196F3;
+    background-color: #6b4ad5;
   }
   
   .toggle-switch .toggle-input:checked + .toggle-label::before {
@@ -97,7 +103,7 @@
   }
   
 .button{
-    background-color: #6b4bd4;
+    background-color: #6b4ad5;
     border: none;
     color: white;
     padding: 6px 14px;
@@ -111,7 +117,7 @@
 }
 
 .button1{
-    background-color: #6b4bd4;
+    background-color: #6b4ad5;
     border: none;
     color: white;
     padding: 6px 284px;
