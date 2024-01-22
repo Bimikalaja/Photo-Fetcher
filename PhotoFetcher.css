@@ -17,7 +17,7 @@ body{
 
 .container {
     position: relative;
-    font-family: Arial;
+    font-family: 'Times New Roman', Times, serif;
 
   }
   
@@ -41,7 +41,7 @@ body{
    width: 750px;
    left: 370px;
 }
-.box1{
+.text{
   position: relative;
   display: flex;
   flex-wrap: wrap;
