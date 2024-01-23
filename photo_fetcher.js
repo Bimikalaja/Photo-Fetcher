@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const baseURL = "https://picsum.photos/375/375";
   const photoContainer = document.getElementById("photoContainer");
-  const loadInitialBtn = document.getElementById("loadMoreBtn");
-  const fetchMoreBtn = document.getElementById("fetchMoreBtn");
-  const toggleSwitch = document.getElementById("toggleSwitch");
+  const fetchButton = document.getElementById("loadMoreBtn");
+  const morephotosButton = document.getElementById("fetchMoreBtn");
+  const grayscaleSlider = document.getElementById("toggleSwitch");
   let totalPhotos = 0;
 
   function fetchPhotos(count) {
     for (let i = 0; i < count; i++) {
-      fetch("https://picsum.photos/375/375")
+      fetch(baseURL)
         .then((response) => {
           if (response.ok) {
             return response.url;
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function applyGrayscale() {
     const images = photoContainer.querySelectorAll("img");
     images.forEach((img) => {
-      if (toggleSwitch.checked) {
+      if (grayscaleSlider.checked) {
         img.classList.add("grayscale");
       } else {
         img.classList.remove("grayscale");
@@ -52,12 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call fetchInitialPhotos when the website opens
   fetchInitialPhotos();
 
-  loadInitialBtn.addEventListener("click", fetchInitialPhotos);
-  fetchMoreBtn.addEventListener("click", fetchMorePhotos);
-  toggleSwitch.addEventListener("change", applyGrayscale);
+  fetchButton.addEventListener("click", fetchInitialPhotos);
+  morephotosButton.addEventListener("click", fetchMorePhotos);
+  grayscaleSlider.addEventListener("change", applyGrayscale);
 });
-
-
-
-
-  
