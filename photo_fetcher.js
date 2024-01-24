@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function fetchMorePhotos() {
-      fetchPhotos(4); // Fetch four more photos
+      fetchPhotos(4);
       applyGrayscale();
   }
 
